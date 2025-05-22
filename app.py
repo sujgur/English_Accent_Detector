@@ -32,3 +32,4 @@ if st.button("Analyze") and video_url:
         for f in [video_path, audio_path]:
             if os.path.exists(f):
                 os.remove(f)
+# force rebuild

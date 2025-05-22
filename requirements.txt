@@ -4,4 +4,7 @@ requests
 transformers
 torch
 torchaudio
+numpy
+ffmpeg-python
+pytube
 git+https://github.com/openai/whisper.git

@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1rsbUiGTgp46WNE0U0IKREJAjkYdqzCMQ
 """
 
-!pip install streamlit
-
 import streamlit as st
 from utils.audio_utils import download_video, extract_audio
 from utils.model_utils import classify_accent, transcribe_audio

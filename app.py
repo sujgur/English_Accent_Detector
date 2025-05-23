@@ -41,3 +41,10 @@ try:
     st.success("✅ ffmpeg installed: " + result.stdout.splitlines()[0])
 except FileNotFoundError:
     st.error("❌ ffmpeg not found.")
+
+import asyncio
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)

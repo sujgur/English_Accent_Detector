@@ -2,7 +2,7 @@ streamlit
 moviepy==1.0.3
 imageio-ffmpeg
 requests
-transformers==4.40.0
+transformers==4.40.1
 torch==2.5.1
 numpy
 ffmpeg-python

@@ -4,7 +4,6 @@ imageio-ffmpeg
 requests
 transformers
 torch==2.5.1
-torchaudio==2.1.2
 numpy
 ffmpeg-python
 pytube

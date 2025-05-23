@@ -32,3 +32,12 @@ if st.button("Analyze") and video_url:
         for f in [video_path, audio_path]:
             if os.path.exists(f):
                 os.remove(f)
+
+import subprocess
+import streamlit as st
+
+try:
+    result = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True)
+    st.success("✅ ffmpeg installed: " + result.stdout.splitlines()[0])
+except FileNotFoundError:
+    st.error("❌ ffmpeg not found.")
